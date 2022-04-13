@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Chitrakoot Web" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="HTML5 Template Crizal" />
+    <meta name="description" content="Expersync" />
+
+    <!-- title  -->
+    <title>EPS-Patient's Record</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/logos/favicon.png">
+    <link rel="apple-touch-icon" href="img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/logos/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+    <!-- search css -->
+    <link rel="stylesheet" href="search/search.css" />
+
+    <!-- quform css -->
+    <link rel="stylesheet" href="quform/css/base.css">
+
+    <!-- custom css -->
+    <link href="css/styles.css" rel="stylesheet" id="colors">
+
+    <link rel="stylesheet" href="css/stylecam.css">
+
+    <!-- summernote-master plugin -->
+    <link rel="stylesheet" href="plugins/summernote-master/summernote.css" />
+
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <!-- For Summer notes-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
+
+        <!-- start header section -->
+        <header class="header-style1 menu_area-light">
+
+            <div class="navbar-default border-bottom border-color-light-white">
+
+                <!-- start top search -->
+                <div class="top-search bg-theme">
+                    <div class="container">
+                        <form class="search-form" action="search.html" method="GET" accept-charset="utf-8">
+                            <div class="input-group">
+                                <span class="input-group-addon cursor-pointer">
+                                    <button class="search-form_submit fas fa-search font-size18 text-white"
+                                        type="submit"></button>
+                                </span>
+                                <input type="text" class="search-form_input form-control" name="s" autocomplete="off"
+                                    placeholder="Type & hit enter...">
+                                <span class="input-group-addon close-search"><i
+                                        class="fas fa-times font-size18 line-height-28 margin-5px-top"></i></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- end top search -->
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-lg-12">
+                            <div class="menu_area alt-font">
+                                <nav class="navbar navbar-expand-lg navbar-light no-padding">
+
+                                    <div class="navbar-header navbar-header-custom">
+                                        <!-- start logo -->
+                                        <a href="home-1.html" class="navbar-brand"><img id="logo"
+                                                src="img/logos/logo-inner.png" alt="logo"></a>
+                                        <!-- end logo -->
+                                    </div>
+
+                                    <div class="navbar-toggler"></div>
+
+                                    <!-- menu area -->
+                                    <ul class="navbar-nav ml-auto" id="nav" style="display: none;">
+                                        <li><a href="#!">Home</a>
+                                            <ul>
+                                                <li><a href="#!">DashBoard</a>
+                                                    
+                                                </li>
+                                                <li><a href="login.html">Log off</a>
+                                                    
+                                                </li>
+                                                <li><a href="#!">Change Password</a>
+                                                    
+                                                </li>
+                                                <li><a href="#!">Exit</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">Patients</a>
+                                            <ul>
+                                                <li><a href="Patients.html">New Patient</a>
+                                                    
+                                                </li>
+                                                <li><a href="#!">Existing Patients</a>
+                                                    
+                                                </li>
+                                                <li><a href="#!">Appointment Calander</a>
+                                                    
+                                                </li>
+
+                                                
+
+                                                <li><a href="#!">Patient Lookup</a>
+                                                    
+                                                </li>
+                                                
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">User</a>
+                                            <ul>
+                                                <li><a href="#!">User Record</a></li>
+                                                <li><a href="#!">User Lookup</a></li>
+                                                <li><a href="#!">Schedule</a></li>
+                                               
+                                            </ul>
+                                        </li>
+                                     
+                                        <li><a href="#!">Accounts</a>
+                                            <ul>
+                                                <li><a href="financial-planning.html">Bill Book</a></li>
+                                                <li><a href="personal-insurance.html">Cash Book</a></li>
+                                                <li><a href="business-analysis.html">Search</a></li>
+                                                <li><a href="market-research.html">Turbo Billing</a></li>
+                                                <li><a href="online-consulting.html">Appointment Billing</a></li>
+                                               
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">Lab</a>
+                                            <ul>
+                                                <li><a href="financial-planning.html">Add Labs</a></li>
+                                                <li><a href="personal-insurance.html">Labs Lookup</a></li>
+                                                <li><a href="business-analysis.html">Requisitions</a></li>
+                                               
+                                               
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">Message</a>
+                                            <ul>
+                                                <li><a href="financial-planning.html">Inbox</a></li>
+                                                <li><a href="personal-insurance.html">Unread messages</a></li>
+                                                <li><a href="business-analysis.html">Alerts</a></li>
+                                                <li><a href="business-analysis.html">Alert Setup</a></li>
+                                               
+                                               
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">Reports</a>
+                                            <ul>
+                                                <li><a href="financial-planning.html">Patient Reports</a></li>
+                                                <li><a href="personal-insurance.html">Accounting Reports</a></li>
+                                                <li><a href="business-analysis.html">System Reports</a></li>
+                                                <li><a href="business-analysis.html">Managment Reports</a></li>
+                                               
+                                               
+                                            </ul>
+                                        </li>
+                                        <li><a href="#!">Admin</a>
+                                            <ul>
+                                                <li><a href="contact.html">General Settings</a></li>
+                                                <li><a href="contact-3.html">User Setup</a></li>
+                                                <li><a href="contact-2.html">Backup and Restore</a></li>
+                                                <li><a href="contact-3.html">Printer Setup</a></li>
+                                                <li><a href="contact-3.html">Fax Setup</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <!-- end menu area -->
+                                    <!-- start attribute navigation -->
+                                    <div class="attr-nav sm-no-margin sm-margin-70px-right xs-margin-65px-right">
+
+
+                                        <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
+
+                                    </div>
+                                    <!-- end attribute navigation -->
+
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- end header section -->
+
+        <!-- start page title section -->
+        <section class="page-title-section2 bg-img cover-background" data-overlay-dark="7" data-background="img/bg/bg9.jpg">
+
+
+            <!-- start service section -->
+        
+        
+            
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 sm-margin-40px-bottom xs-margin-30px-bottom">
+                            <div class="service-block10">
+            
+                                <div class="position-relative z-index-1">
+            
+                                    <span class="margin-30px-bottom d-block"><i class="fas fa-hospital-user"></i></span>
+                                   <h4> Patients</h4>
+                                    <p class="no-margin-bottom"></p>
+            
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 sm-margin-40px-bottom xs-margin-30px-bottom">
+                            <div class="service-block10">
+            
+                                <div class="position-relative z-index-1">
+            
+                                    <span class="margin-30px-bottom d-block"><i class="fas fa-file-invoice-dollar"></i></span>
+                                    <h4>Accounts and <br />Billing</h4>
+                                    <p class="no-margin-bottom"></p>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 xs-margin-30px-bottom">
+                            <div class="service-block10">
+            
+                                <div class="position-relative z-index-1">
+            
+                                    <span class="margin-30px-bottom d-block"><i class="fas fa-envelope-open-text"></i></span>
+                                    <h4>Message <br />Center</h4>
+                                    <p class="no-margin-bottom"></p>
+                                </div>
+            
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="service-block10">
+            
+                                <div class="position-relative z-index-1">
+            
+                                    <span class="margin-30px-bottom d-block"><i class="fas fa-file-invoice"></i></span>
+                                    <h4>Reports</h4>
+                                    <p class="no-margin-bottom"></p>
+            
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end service section -->
+        
+                    <div class="container"></div>
+                    <div class="card card-white">
+<br>
+                        <div class="section-heading">
+                            <h4>Patient Basic Info</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 sm-margin-30px-bottom">
+
+                                <!-- start form here -->
+
+                                <form class="quform" action="quform/getin-touch-one.php" method="post"
+                                    enctype="multipart/form-data" onclick="">
+
+                                    <div class="quform-elements">
+
+                                        <div class="row">
+
+                                            <!-- Begin Text input element -->
+                                            <div class="col-md-6">
+                                                <div class="quform-element form-group">
+                                                    <div class="quform-input">
+                                                        <input id="name" type="text" name="name" placeholder="John Doe"
+                                                            readonly />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- End Text input element -->
+
+                                            <!-- Begin Text input element -->
+                                            <div class="col-md-6">
+                                                <div class="quform-element form-group">
+                                                    <div class="quform-input">
+                                                        <input id="DOB" type="text" name="DOB"
+                                                            placeholder="Date of Birth" readonly />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Text input element -->
+
+                                            <!-- Begin Text input element -->
+                                            <div class="col-md-6">
+                                                <div class="quform-element form-group">
+                                                    <div class="quform-input">
+                                                        <input id="HealthCard" type="text" name="subject"
+                                                            placeholder="Health Card Number" readonly />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- End Text input element -->
+
+                                            <!-- Begin Text input element -->
+                                            <div class="col-md-6">
+                                                <div class="quform-element form-group">
+                                                    <div class="quform-input">
+                                                        <input id="phone" type="text" name="phone"
+                                                            placeholder="Phone number" readonly />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <!-- End Text input element -->
+
+                                            <!-- Begin Textarea element -->
+                                            <div class="col-md-12">
+                                                <div class="quform-element form-group">
+                                                    <div class="quform-input">
+                                                        <textarea id="Address" name="Address" rows="3"
+                                                            placeholder="730 Fake Ave   ba bla" readonly></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Textarea element -->
+
+                                            <!-- Begin Captcha element -->
+                                            <div class="col-md-12">
+                                                <div class="quform-element">
+                                                    <div class="form-group">
+                                                        <div class="quform-input">
+                                                            <input id="MD" type="text" name="MD" placeholder="MD"
+                                                                readonly />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="quform-captcha">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Captcha element -->
+
+                                            <!-- Begin Submit button -->
+                                            <div class="col-md-12">
+                                                <div class="quform-submit-inner">
+                                                    <button class="butn" type="submit"><span>Edit Info</span></button>
+                                                </div>
+                                                <div class="quform-loading-wrap text-left"><span
+                                                        class="quform-loading"></span></div>
+                                            </div>
+                                            <!-- End Submit button -->
+
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                                <!-- end form here -->
+
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+
+                                <div id="accordion" class="accordion-style3">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link" data-toggle="collapse"
+                                                    data-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Past Health History
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                            data-parent="#accordion">
+                                            <div class="card-body bg-white">
+                                                HPT Obesity diabetes.
+                                            </div>
+<!-- start Popup-->
+
+
+
+
+
+                                                <p> <button type="button" class="butn theme small" data-toggle="modal" data-target="#exampleModal">
+                                                    Add 
+                                                  </button>
+                                                </p>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog" role="document">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Add Health History</h5>
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="quform-element form-group">
+                                                                <div class="quform-input">
+                                                                    <textarea id="Pop_Address" name="Address" rows="3"
+                                                                        placeholder="" readonly></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="butn theme small" data-dismiss="modal">Close</button>
+                                                          <button type="button" class="butn theme small">Save changes</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+
+                                            <!-- End Popup-->
+                                        
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Personal Information.
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                            data-parent="#accordion">
+                                            <div class="card-body bg-white">
+                                                Divorced.
+
+                                            </div>
+                                            <!-- start Popup-->
+                                            <p> <button type="button" class="butn theme small" data-toggle="modal" data-target="#exampleModal2">
+                                                Add 
+                                              </button>
+                                            </p>
+
+                                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel2">Add Health History</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="Pop_Address2" name="Address" rows="3"
+                                                                    placeholder="" readonly></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="butn theme small" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="butn theme small">Save changes</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <!-- start Popup-->
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Alergies
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body bg-white no-padding-bottom">
+                                                Food: Lactose intolarance penuts .
+
+                                            </div>
+
+
+                                            <!-- Start popup-->
+                                            <p> <button type="button" class="butn theme small" data-toggle="modal" data-target="#exampleModal3">
+                                                Add 
+                                              </button>
+                                            </p>
+
+                                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel3">Add Health History</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="Pop_Address3" name="Address" rows="3"
+                                                                    placeholder="" readonly></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="butn theme small" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="butn theme small">Save changes</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Immunizations ?
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingThree"
+                                            data-parent="#accordion">
+                                            <div class="card-body bg-white no-padding-bottom">
+                                                Flu (5) COVID.
+                                            </div>
+
+                                            <!-- start Popup-->
+                                            <p> <button type="button" class="butn theme small" data-toggle="modal" data-target="#exampleModal4">
+                                                Add 
+                                              </button>
+                                            </p>
+
+                                            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel4">Add Health History</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="Pop_Address4" name="Address" rows="3"
+                                                                    placeholder="" readonly></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="butn theme small" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="butn theme small">Save changes</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="headingFive">
+                                            <h5 class="mb-0">
+                                                <button class="btn btn-link collapsed" data-toggle="collapse"
+                                                    data-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    Risk
+                                                </button>
+                                            </h5>
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                            data-parent="#accordion">
+                                            <div class="card-body bg-white no-padding-bottom">
+                                                Obesity Alcohol.
+                                            </div>
+
+                                            <!-- start Popup-->
+                                            <p> <button type="button" class="butn theme small" data-toggle="modal" data-target="#exampleModal5">
+                                                Add 
+                                              </button>
+                                            </p>
+
+                                            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel5">Add Health History</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="Pop_Address5" name="Address" rows="3"
+                                                                    placeholder="" ></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="butn theme small" data-dismiss="modal">Close</button>
+                                                      <button type="button" class="butn theme small">Save changes</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+      
+                <!-- end contact section -->
+
+
+
+                <section class="bg-light-gray" data-scroll-index="6">
+                    <div class="container">
+
+                        <div class="card card-white">
+                            <div class="section-heading">
+                                <br>
+                                <h4>Patient's Chart</h4>
+                            </div>
+                            <!-- start contact info section -->
+
+                            <div class="container">
+
+                                <div class="section-heading">
+
+                                    <!--<p class="width-55 sm-width-75 xs-width-95">We are available 24/7 by e-mail and phone. You can also ask a question about our services through our contact form that we regularly provide.</p>-->
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+
+                                        <!-- start form here -->
+
+                                        <form class="quform" action="quform/getin-touch-one.php" method="post"
+                                            enctype="multipart/form-data" onclick="">
+                                            <div class="quform-element form-group">
+                                                <div class="quform-element form-group">
+                                                    <span class="icon"><i
+                                                            class="fas fa-heartbeat text-theme-color"></i></span>
+                                                    <label for="start">Vitals</label>
+                                                </div>
+                                            </div>
+                                            <div class="quform-elements">
+
+                                                <div class="row">
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="BP" type="text" name="name"
+                                                                    placeholder="BP" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="Temp" type="text" name="name"
+                                                                    placeholder="Temp" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="P" type="text" name="name"
+                                                                    placeholder="PR" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="Height" type="text" name="email"
+                                                                    placeholder="Ht" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="Weight" type="text" name="email"
+                                                                    placeholder="Wt" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="O2" type="text" name="email"
+                                                                    placeholder="O2" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Text input element -->
+
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-user-nurse text-theme-color"></i></span>
+                                                                <label for="start">Inital Assessment</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="inAss" type="text" name="inAss"
+                                                                    placeholder="Initial Assessment" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Text input element -->
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-diagnoses text-theme-color"></i></span>
+                                                                <label for="start">Diagnosis</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="Diagnosis" type="text" name="Diagnosis"
+                                                                    placeholder="Diagnosis" />
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Text input element -->
+
+                                                    <!-- Begin Textarea element -->
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-notes-medical text-theme-color"></i></span>
+                                                                <label for="start">Doctor Notes</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <div id="summernote"></div>
+                                                                <script>
+                                                                    $('#summernote').summernote({
+                                                                        placeholder: 'Notes',
+                                                                        tabsize: 2,
+                                                                        height: 120,
+                                                                        toolbar: [
+                                                                            ['style', ['style']],
+                                                                            ['font', ['bold', 'underline', 'clear']],
+                                                                            ['color', ['color']],
+                                                                            ['para', ['ul', 'ol', 'paragraph']],
+                                                                            ['table', ['table']],
+                                                                            ['insert', ['link', 'picture', 'video']],
+                                                                            ['view', ['fullscreen', 'codeview', 'help']]
+                                                                        ]
+                                                                    });
+                                                                </script>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-capsules text-theme-color"></i></span>
+                                                                <label for="start">Medications</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- End Textarea element -->
+                                                    <div class="col-md-5">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <input id="Rx" type="text" name="inRx"
+                                                                    placeholder="Medicine" />
+                                                                    <p></p>
+                                                                    <label for="start">strength</label>
+                                                                    <input id="sRx" type="text" name="inRx"
+                                                                    placeholder="25MG" readonly />
+                                                                    <p></p>
+                                                                    <label for="start">form</label>
+                                                                    <input id="fRx" type="text" name="inRx"
+                                                                    placeholder="Tablet" readonly/>
+                                                                    <p></p>
+                                                                    <label for="start">route</label>
+                                                                    <input id="rRx" type="text" name="inRx"
+                                                                    placeholder="By Mouth" readonly />
+                                                                    <p></p>
+                                                            </div>
+                                                            
+                                                        </div>
+
+                                                    </div>
+                                                    
+                                                    <div class="col-md-2">
+                                                        <div class="quform-element form-group">
+                                                            <button class="butn theme small" type="submit"><span>Add </span></button>
+                                                        </div>
+                                                        <div class="quform-loading-wrap text-left"><span
+                                                                class="quform-loading"></span></div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-input">
+                                                                <textarea id="NOK" name="NOK" rows="6"
+                                                                    placeholder=""></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-file-prescription text-theme-color"></i></span>
+                                                                <label for="start">Dosage and Schedule</label>
+                                                                <p></p>
+                                                                <label for="start">Quantity</label>
+                                                                <input id="Rx1" type="option" name="inRx"
+                                                                placeholder="Medicine" />
+                                                                <p></p>
+                                                                <label for="start">Frequency</label>
+                                                                <input id="Rx2" type="text" name="inRx"
+                                                                placeholder="PO QHS" />
+                                                                <button class="butn theme small" type="submit"><span>Schedule</span></button>
+
+                                                                <p></p>
+                                                                <label for="start">Duration</label>
+                                                                <input id="Rx3" type="date" name="inRx"
+                                                                placeholder="Medicine" />
+                                                                <p></p>
+                                                                <button class="butn theme small" type="submit"><span>Refill</span></button>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Begin Captcha element -->
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-image text-theme-color"></i></span>
+                                                                <label for="start">Insert image to chart</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element">
+                                                            <div class="form-group">
+                                                                <div class="custom-file">
+                                                                    <input type="file" class="custom-file-input"
+                                                                        id="customFile">
+                                                                    <label class="custom-file-label"
+                                                                        for="customFile">Choose file</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-project-diagram text-theme-color"></i></span>
+                                                                <label for="start">Insert diagram to chart</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element">
+                                                            <div class="form-group">
+                                                                <div class="custom-file">
+                                                                    <input type="file" class="custom-file-input"
+                                                                        id="customFile2">
+                                                                    <label class="custom-file-label"
+                                                                        for="customFile">Choose file</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element form-group">
+                                                            <div class="quform-element form-group">
+                                                                <span class="icon"><i
+                                                                        class="fas fa-envelope-square text-theme-color"></i></span>
+                                                                <label for="start">Insert Letter to chart</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="quform-element">
+                                                            <div class="form-group">
+                                                                <div class="custom-file">
+                                                                    <input type="file" class="custom-file-input"
+                                                                        id="customFile1">
+                                                                    <label class="custom-file-label"
+                                                                        for="customFile">Choose file</label>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                                    Save Changes
+                                                                                  </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Save Data</a>
+                                                                <a class="dropdown-item" href="#">Save and Print Requisistion</a>
+                                                                <a class="dropdown-item" href="#">Save and Fax Requisistion</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!-- End Captcha element -->
+
+                                                    <!-- Begin Submit button -->
+
+                                                    <!-- End Submit button -->
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <!-- end form here -->
+
+                                            <!-- <div id="camera">
+                  
+                    <canvas id="camera--sensor"></canvas>
+                   
+                    <video id="camera--view" autoplay playsinline></video>
+                   
+                    <img src="//:0" alt="" id="camera--output">
+                    
+                    
+                    <button id="camera--trigger">Take a picture</button>
+                </div> -->
+                                        </form>
+
+
+                                        <!-- start form here -->
+
+
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-12 order-1 order-lg-2">
+                                        <div
+                                            class="contact-info padding-50px-left md-padding-30px-left sm-no-padding-left sm-margin-30px-bottom">
+                                            <div class="item bg-white">
+                                                <span class="icon"><i class="fas fa-vial text-theme-color"></i></span>
+                                                <div class="cont">
+                                                    <h6
+                                                        class="margin-5px-bottom font-size16 md-font-size15 xs-font-size14 font-weight-600">
+                                                        Labs </h6>
+                                                    <p>
+
+                                                        <!-- start table section -->
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Collection Date:</th>
+                                                                <th>Section</th>
+                                                                <th>Report Link</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>6/3/21</td>
+                                                                <td>Hemotology</td>
+                                                                <td><a href="PDF-out.html"><u>view report</u></a> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6/3/21</td>
+                                                                <td>Chemistry</td>
+                                                                <td><a href="PDF-out.html"><u>view report</u></a> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6/5/21</td>
+                                                                <td>Hemotology</td>
+                                                                <td><a href="PDF-out.html"><u>view report</u></a> </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- end table section -->
+
+
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="item bg-white">
+                                                <span class="icon"><i
+                                                        class="fas fa-prescription text-theme-color"></i></span>
+                                                <div class="cont">
+                                                    <h6
+                                                        class="margin-5px-bottom font-size16 md-font-size15 xs-font-size14 font-weight-600">
+                                                        Current Medications</h6>
+
+
+                                                    <!-- list style 14-->
+                                                    <ul class="list-style-14">
+                                                        <li>Atenalol 50mg b.i.d </li>
+                                                        <li>pantaprosol 25mg p.o</li>
+                                                        <li>megnisium 250mg t.i.d</li>
+                                                        <li>Colace 100mg p.o</li>
+                                                        <li>xaralto 25mg p.o</li>
+                                                    </ul>
+                                                    <!-- end list style 14-->
+
+
+                                                </div>
+                                            </div>
+                                            <div class="item bg-white">
+                                                <span class="icon"><i
+                                                        class="fas fa-file-medical-alt text-theme-color"></i></span>
+                                                <div class="cont">
+                                                    <h6
+                                                        class="margin-5px-bottom font-size16 md-font-size15 xs-font-size14 font-weight-600">
+                                                        Current Medical Problems </h6>
+                                                    <!-- list style 14-->
+                                                    <ul class="list-style-14">
+                                                        <li>HPT </li>
+                                                        <li>Obesity</li>
+
+                                                        <li>diabetes</li>
+
+                                                    </ul>
+                                                    <!-- end list style 14-->
+                                                </div>
+                                            </div>
+                                            <div class="item bg-white">
+                                                <span class="icon"><i class="fas fa-stream text-theme-color"></i></span>
+                                                <div class="cont">
+                                                    <h6
+                                                        class="margin-5px-bottom font-size16 md-font-size15 xs-font-size14 font-weight-600">
+                                                        Progress Notes: </h6>
+                                                    <!-- start table section -->
+                                                    <table class="table table-bordered">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Date:</th>
+                                                                <th>diagnosis</th>
+                                                                <th>Notes Link</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>6/3/21</td>
+                                                                <td>Heart Burn</td>
+                                                                <td><a href="team.html"><u>view notes</u></a> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6/3/21</td>
+                                                                <td>Flue</td>
+                                                                <td><a href="team.html"><u>view notes</u></a> </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6/5/21</td>
+                                                                <td>Shortness of breath</td>
+                                                                <td><a href="team.html"><u>view notes</u></a> </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!-- end table section -->
+                                                </div>
+                                            </div>
+                                            <div class="item bg-white">
+                                                <span class="icon"><i class="fas fa-camera text-theme-color"></i></span>
+                                                <div class="cont">
+                                                    <h6
+                                                        class="margin-5px-bottom font-size16 md-font-size15 xs-font-size14 font-weight-600">
+                                                        Open Camera: </h6>
+                                                    <!-- start Camera section -->
+                                                    <div id="camera">
+                  
+                                                        <canvas id="camera--sensor"></canvas>
+                                                       
+                                                        <video id="camera--view" autoplay playsinline></video>
+                                                       
+                                                        <img src="//:0" alt="" id="camera--output">
+                                                        
+                                                        
+                                                        <!-- <button >Take a picture</button> -->
+                                                        <br>
+                                                <br>
+                                                        <button class="butn small" id="camera--trigger" type="submit"><span>Open Camera</span></button>
+                                                <br>
+                                                <br>
+                                                       <!-- <button class="butn theme small" id="camera--trigger" type="submit"><span>Open Camera</span></button> -->
+                                                    </div>
+                                                    <!-- end Camera section -->
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- end contact info section -->
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+<!--appointment BAR-->
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr border-right border-color-light-black sm-no-border-right sm-border-bottom">
+                    <span class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-theme-color vertical-align-top width-40px"><i class="fas fa-flask vertical-align-top"></i></span>
+                    <div class="d-inline-block vertical-align-top padding-10px-left width-75">
+                        <h5 class="no-margin text-uppercase font-size15 font-weight-600"><a href="Requisitions.html"><u>Lab Requisition</u></a></h5>
+                        <p class="no-margin line-height-normal">Requisition bloodwork, Imaging, CT and MRI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr border-right border-color-light-black sm-no-border-right sm-border-bottom">
+                    <span class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-theme-color vertical-align-top width-40px"><i class="fas fa-calendar-week vertical-align-top"></i></span>
+                    <div class="d-inline-block vertical-align-top padding-10px-left width-75">
+                        <h5 class="no-margin text-uppercase font-size15 font-weight-600"><a href="Requisitions.html"><u>This week Appointments</u></a></h5>
+                        <p class="no-margin line-height-normal">Dr Mudassir's Appointments </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="padding-30px-all sm-padding-25px-tb sm-no-padding-lr">
+                    <span class="d-inline-block font-size36 line-height-30 sm-font-size32 sm-line-height-30 text-theme-color vertical-align-top width-40px"><i class="fas fa-inbox vertical-align-top"></i></span>
+                    <div class="d-inline-block vertical-align-top padding-10px-left width-75">
+                        <h5 class="no-margin text-uppercase font-size15 font-weight-600"><a href="Requisitions.html"><u>Inbox</u></a></h5>
+                        <p class="no-margin line-height-normal">Dr Mudassir's Inbox.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+          
+
+
+
+               
+                <!--appointment BAR-->
+            
+
+            <!-- end contact info section -->
+
+
+
+            <!-- start footer section -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+
+                            <img alt="footer-logo" src="img/logos/logo-footer.png">
+                            <p class="margin-20px-top">EPS is bla bla bla bla. when I it working my face was Bla bla bla
+                                and it
+                                all made me bla bla bla. what the bla is bla on the bla bla bla.</p>
+                            <div class="margin-25px-top footer-social-icons">
+                                <ul>
+                                    <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 sm-margin-30px-bottom">
+                            <h3 class="footer-title-style2 text-theme-color">Quick Links</h3>
+                            <div class="row">
+                                <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                    <ul class="footer-list xs-margin-5px-bottom">
+                                        <li><a href="#!">Home</a></li>
+                                        <li><a href="#!">Patients</a></li>
+                                        <li><a href="#!">Provider</a></li>
+                                        <li><a href="#!">Accounts</a></li>
+                                        <li><a href="#!">Admin</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 no-padding-right xs-padding-15px-right">
+                                    <ul class="footer-list">
+                                        <li><a href="#!">Appointment</a></li>
+                                        <li><a href="#!">Address Book</a></li>
+                                        <li><a href="#!">Inbox</a></li>
+                                     
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 offset-lg-1">
+                            <h3 class="footer-title-style2 text-theme-color">Get in Touch</h3>
+                            <ul class="footer-list">
+                                <li>
+                                    <span class="d-inline-block vertical-align-top font-size18"><i
+                                            class="fas fa-map-marker-alt text-theme-color"></i></span>
+                                    <span class="d-inline-block width-85 vertical-align-top padding-10px-left">7
+                                        Elmhurst crt,
+                                        Sudbury Ontario P3A 1A3.</span>
+                                </li>
+                                <li>
+                                    <span class="d-inline-block vertical-align-top font-size18"><i
+                                            class="fas fa-mobile-alt text-theme-color"></i></span>
+                                    <span class="d-inline-block width-85 vertical-align-top padding-10px-left"> (705)
+                                        507
+                                        3456</span>
+                                </li>
+                                <li>
+                                    <span class="d-inline-block vertical-align-top font-size18"><i
+                                            class="far fa-envelope text-theme-color"></i></span>
+                                    <span
+                                        class="d-inline-block width-85 vertical-align-top padding-10px-left">info@expersync.ca</span>
+                                </li>
+                                <li>
+                                    <span class="d-inline-block vertical-align-top font-size18"><i
+                                            class="fas fa-globe text-theme-color"></i></span>
+                                    <span
+                                        class="d-inline-block width-85 vertical-align-top padding-10px-left">www.expersynch.ca</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="footer-bar xs-font-size13">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 text-left xs-text-center xs-margin-5px-bottom">
+                                <p>&copy; Copyright Expertsync Inc.
+                                    <script>
+                                        document.write(new Date().getFullYear())
+                                    </script>. All Rights Reserved.
+                                </p>
+                            </div>
+                            <div class="col-md-6 text-right xs-text-center">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer section -->
+
+
+            <!-- end main-wrapper section -->
+
+            <!-- start scroll to top -->
+            <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+            <!-- end scroll to top -->
+
+            <!-- all js include start -->
+
+            <!-- jquery -->
+            <script src="js/jquery.min.js"></script>
+
+            <!-- popper js -->
+            <script src="js/popper.min.js"></script>
+
+            <!-- bootstrap -->
+            <script src="js/bootstrap.min.js"></script>
+
+            <!-- navigation -->
+            <script src="js/nav-menu.js"></script>
+
+            <!-- serch -->
+            <script src="search/search.js"></script>
+
+            <!-- tab -->
+            <script src="js/easy.responsive.tabs.js"></script>
+
+            <!-- owl carousel -->
+            <script src="js/owl.carousel.js"></script>
+
+            <!-- jquery.counterup.min -->
+            <script src="js/jquery.counterup.min.js"></script>
+
+            <!-- stellar js -->
+            <script src="js/jquery.stellar.min.js"></script>
+
+            <!-- waypoints js -->
+            <script src="js/waypoints.min.js"></script>
+
+            <!-- countdown js -->
+            <script src="js/countdown.js"></script>
+
+            <!-- jquery.magnific-popup js -->
+            <script src="js/jquery.magnific-popup.min.js"></script>
+
+            <!-- isotope.pkgd.min js -->
+            <script src="js/isotope.pkgd.min.js"></script>
+
+            <!--  chart js -->
+            <script src="js/chart.min.js"></script>
+
+            <!-- thumbs js -->
+            <script src="js/owl.carousel.thumbs.js"></script>
+
+            <!-- animated js -->
+            <script src="js/animated-headline.js"></script>
+
+            <!--  clipboard js -->
+            <script src="js/clipboard.min.js"></script>
+
+            <!--  prism js -->
+            <script src="js/prism.js"></script>
+
+            <!-- custom scripts -->
+            <script src="js/main.js"></script>
+
+            <!-- quform plugins js -->
+            <script src="quform/js/plugins.js"></script>
+
+            <!-- quform scripts js -->
+            <script src="quform/js/scripts.js"></script>
+
+            <script src="js/cam.js"></script>
+
+
+
+            <!-- all js include end -->
+
+</body>
+
+</html>
